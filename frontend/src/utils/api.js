@@ -1,4 +1,4 @@
-export const API_URL = 'https://pathmakers-p24q.onrender.com/api';
+export const API_URL = 'https://path-makers.onrender.com/api';
 
 export const loginUser = async (email, password) => {
     const response = await fetch(`${API_URL}/auth/login`, {
