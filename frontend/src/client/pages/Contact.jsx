@@ -42,7 +42,7 @@ const Contact = () => {
             setTimeout(() => setIsSuccess(false), 8000);
         } catch (err) {
             console.error(err);
-            alert('Failed to submit message. Please try again.');
+            alert('Failed to submit message.  try again.');
         } finally {
             setIsSubmitting(false);
         }
