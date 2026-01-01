@@ -6,7 +6,10 @@ import SpotlightCard from '../../components/ui/SpotlightCard';
 import AnimatedCounter from '../components/ui/AnimatedCounter';
 import { API_URL } from '../../utils/api';
 
+import { Helmet } from 'react-helmet-async';
+
 const Landing = () => {
+    // ... hooks ...
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
     const y2 = useTransform(scrollY, [0, 500], [0, -150]);
@@ -44,6 +47,12 @@ const Landing = () => {
 
     return (
         <div className="overflow-hidden bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white selection:bg-pink-500/30 transition-colors duration-300">
+            <Helmet>
+                <title>PathMakers - Premier Freelance Marketplace for Digital Services</title>
+                <meta name="description" content="Hire top-tier freelancers on PathMakers. The ultimate digital ecosystem for web development, graphic design, content writing, SEO, and more. Bring your vision to life today." />
+                <meta name="keywords" content="PathMakers, Freelancing, Hire Freelancers, Digital Services, Remote Work, Web Development, Graphic Design, SEO Services" />
+                <link rel="canonical" href="https://path-makers.vercel.app/" />
+            </Helmet>
 
             {/* --- HERO SECTION: 3D REIMAGINED --- */}
             <section className="relative min-h-[110vh] flex items-center justify-center px-4 md:px-6 pt-20 pb-20 overflow-hidden">

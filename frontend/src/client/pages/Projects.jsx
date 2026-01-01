@@ -120,6 +120,8 @@ const projects = [
     }
 ];
 
+import { Helmet } from 'react-helmet-async';
+
 const Projects = () => {
     const [activeCategory, setActiveCategory] = useState('All');
     const [bookingProject, setBookingProject] = useState(null);
@@ -130,6 +132,12 @@ const Projects = () => {
 
     return (
         <div className="bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20 text-slate-900 dark:text-white transition-colors duration-300">
+            <Helmet>
+                <title>Our Work & Portfolio | PathMakers</title>
+                <meta name="description" content="Browse our portfolio of successful projects including web apps, mobile apps, and AI solutions. See how PathMakers delivers digital excellence." />
+                <meta name="keywords" content="PathMakers portfolio, recent projects, web development case studies, app development examples" />
+                <link rel="canonical" href="https://path-makers.vercel.app/projects" />
+            </Helmet>
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12 md:mb-16">
                     <motion.h1

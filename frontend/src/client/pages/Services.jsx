@@ -57,12 +57,20 @@ const services = [
     },
 ];
 
+import { Helmet } from 'react-helmet-async';
+
 const Services = () => {
     const [selectedService, setSelectedService] = useState(null); // For Detail Modal
     const [bookingService, setBookingService] = useState(null); // For Booking Modal
 
     return (
         <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-white pt-24 pb-20 transition-colors duration-300">
+            <Helmet>
+                <title>Our Services | PathMakers - Web, App, AI & More</title>
+                <meta name="description" content="Explore our comprehensive digital services: Web Development, App Development, AI Solutions, Cloud Infrastructure, and Cyber Security. Scale your business with PathMakers." />
+                <meta name="keywords" content="Web Development, App Development, AI Solutions, Cloud Infrastructure, Cyber Security, Consulting, Digital Transformation" />
+                <link rel="canonical" href="https://path-makers.vercel.app/services" />
+            </Helmet>
             <div className="container mx-auto px-6">
 
                 {/* Header */}

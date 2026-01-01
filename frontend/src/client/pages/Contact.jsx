@@ -4,8 +4,11 @@ import { MapPin, Phone, Mail, Send, Loader2, CheckCircle2 } from 'lucide-react';
 import SpotlightCard from '../../components/ui/SpotlightCard';
 import { API_URL } from '../../utils/api';
 
+import { Helmet } from 'react-helmet-async';
+
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', subject: '', message: '', services: [] });
+    // ... hooks ...
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
@@ -52,6 +55,12 @@ const Contact = () => {
 
     return (
         <div className="bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20 text-slate-900 dark:text-white relative overflow-hidden transition-colors duration-300">
+            <Helmet>
+                <title>Contact Us | PathMakers - Let's Build the Future</title>
+                <meta name="description" content="Get in touch with PathMakers. Request a quote, discuss your project, or ask about our services. We are ready to build your vision." />
+                <meta name="keywords" content="Contact PathMakers, hire developers, project inquiry, get a quote" />
+                <link rel="canonical" href="https://path-makers.vercel.app/contact" />
+            </Helmet>
             {/* Background Effects */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-200 dark:bg-blue-600/10 rounded-full blur-[120px] pointer-events-none opacity-50 dark:opacity-100"></div>
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-200 dark:bg-purple-600/10 rounded-full blur-[100px] pointer-events-none opacity-50 dark:opacity-100"></div>

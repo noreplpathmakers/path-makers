@@ -6,9 +6,17 @@ import AnimatedCounter from '../components/ui/AnimatedCounter';
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
+import { Helmet } from 'react-helmet-async';
+
 const About = () => {
     return (
         <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-white pt-24 pb-20 overflow-hidden relative transition-colors duration-300">
+            <Helmet>
+                <title>About Us | PathMakers - Our Vision & Mission</title>
+                <meta name="description" content="Learn about PathMakers, our team, our vision, and our mission in providing clean, reliable digital solutions. Meet the minds behind the code." />
+                <meta name="keywords" content="About PathMakers, PathMakers team, software company mission, digital partner" />
+                <link rel="canonical" href="https://path-makers.vercel.app/about" />
+            </Helmet>
             {/* Background Noise & Gradients */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-blue-100 dark:from-blue-900/20 to-transparent"></div>
