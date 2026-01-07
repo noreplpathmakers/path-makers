@@ -58,8 +58,21 @@ const Contact = () => {
             <Helmet>
                 <title>Contact Us | PathMakers - Let's Build the Future</title>
                 <meta name="description" content="Get in touch with PathMakers. Request a quote, discuss your project, or ask about our services. We are ready to build your vision." />
-                <meta name="keywords" content="Contact PathMakers, hire developers, project inquiry, get a quote" />
+                <meta name="keywords" content="Contact PathMakers, hire developers, project inquiry, get a quote, free consultation, request quote" />
                 <link rel="canonical" href="https://path-makers.vercel.app/contact" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/contact" />
+                <meta property="og:title" content="Contact PathMakers - Start Your Project" />
+                <meta property="og:description" content="Ready to start your project? Contact us for a free consultation and let's build your vision together." />
+                <meta property="og:image" content="https://path-makers.vercel.app/og-contact.jpg" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Contact PathMakers - Start Your Project" />
+                <meta name="twitter:description" content="Ready to start your project? Contact us for a free consultation." />
+                <meta name="twitter:image" content="https://path-makers.vercel.app/og-contact.jpg" />
             </Helmet>
             {/* Background Effects */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-200 dark:bg-blue-600/10 rounded-full blur-[120px] pointer-events-none opacity-50 dark:opacity-100"></div>

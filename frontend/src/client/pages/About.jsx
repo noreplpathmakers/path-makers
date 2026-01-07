@@ -14,8 +14,21 @@ const About = () => {
             <Helmet>
                 <title>About Us | PathMakers - Our Vision & Mission</title>
                 <meta name="description" content="Learn about PathMakers, our team, our vision, and our mission in providing clean, reliable digital solutions. Meet the minds behind the code." />
-                <meta name="keywords" content="About PathMakers, PathMakers team, software company mission, digital partner" />
+                <meta name="keywords" content="About PathMakers, PathMakers team, software company mission, digital partner, our story, company values" />
                 <link rel="canonical" href="https://path-makers.vercel.app/about" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/about" />
+                <meta property="og:title" content="About PathMakers - Our Vision & Mission" />
+                <meta property="og:description" content="Discover our journey, vision, and the team dedicated to transforming digital challenges into elegant solutions." />
+                <meta property="og:image" content="https://path-makers.vercel.app/og-about.jpg" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About PathMakers - Our Vision & Mission" />
+                <meta name="twitter:description" content="Discover our journey, vision, and the team dedicated to transforming digital challenges into elegant solutions." />
+                <meta name="twitter:image" content="https://path-makers.vercel.app/og-about.jpg" />
             </Helmet>
             {/* Background Noise & Gradients */}
             <div className="absolute inset-0 z-0 pointer-events-none">

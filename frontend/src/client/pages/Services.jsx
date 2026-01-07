@@ -68,8 +68,21 @@ const Services = () => {
             <Helmet>
                 <title>Our Services | PathMakers - Web, App, AI & More</title>
                 <meta name="description" content="Explore our comprehensive digital services: Web Development, App Development, AI Solutions, Cloud Infrastructure, and Cyber Security. Scale your business with PathMakers." />
-                <meta name="keywords" content="Web Development, App Development, AI Solutions, Cloud Infrastructure, Cyber Security, Consulting, Digital Transformation" />
+                <meta name="keywords" content="Web Development, App Development, AI Solutions, Cloud Infrastructure, Cyber Security, Consulting, Digital Transformation, SaaS Development, API Integration" />
                 <link rel="canonical" href="https://path-makers.vercel.app/services" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/services" />
+                <meta property="og:title" content="Digital Services - Web, App & AI Solutions" />
+                <meta property="og:description" content="Full-stack development, AI solutions, cloud infrastructure, and cybersecurity services to scale your business." />
+                <meta property="og:image" content="https://path-makers.vercel.app/og-services.jpg" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Digital Services - Web, App & AI Solutions" />
+                <meta name="twitter:description" content="Full-stack development, AI solutions, cloud infrastructure, and cybersecurity services." />
+                <meta name="twitter:image" content="https://path-makers.vercel.app/og-services.jpg" />
             </Helmet>
             <div className="container mx-auto px-6">
 

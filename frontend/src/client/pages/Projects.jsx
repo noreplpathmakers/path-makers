@@ -135,8 +135,21 @@ const Projects = () => {
             <Helmet>
                 <title>Our Work & Portfolio | PathMakers</title>
                 <meta name="description" content="Browse our portfolio of successful projects including web apps, mobile apps, and AI solutions. See how PathMakers delivers digital excellence." />
-                <meta name="keywords" content="PathMakers portfolio, recent projects, web development case studies, app development examples" />
+                <meta name="keywords" content="PathMakers portfolio, recent projects, web development case studies, app development examples, project showcase, client success stories" />
                 <link rel="canonical" href="https://path-makers.vercel.app/projects" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/projects" />
+                <meta property="og:title" content="Portfolio - Real-World Digital Solutions" />
+                <meta property="og:description" content="Explore our portfolio of successful web apps, mobile applications, and AI implementations." />
+                <meta property="og:image" content="https://path-makers.vercel.app/og-projects.jpg" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Portfolio - Real-World Digital Solutions" />
+                <meta name="twitter:description" content="Explore our portfolio of successful web apps, mobile applications, and AI implementations." />
+                <meta name="twitter:image" content="https://path-makers.vercel.app/og-projects.jpg" />
             </Helmet>
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12 md:mb-16">

@@ -1,10 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ScrollText } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Terms = () => {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-24 px-6">
+            <Helmet>
+                <title>Terms of Service | PathMakers</title>
+                <meta name="description" content="Read PathMakers' Terms of Service including service agreements, intellectual property rights, payment terms, and liability limitations." />
+                <meta name="keywords" content="Terms of Service, PathMakers terms, service agreement, legal terms, user agreement" />
+                <link rel="canonical" href="https://path-makers.vercel.app/terms" />
+                <meta name="robots" content="index, follow" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/terms" />
+                <meta property="og:title" content="Terms of Service - PathMakers" />
+                <meta property="og:description" content="Review our terms of service, user agreements, and legal policies." />
+            </Helmet>
             <div className="container mx-auto max-w-4xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

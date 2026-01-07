@@ -1,10 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Privacy = () => {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-24 px-6">
+            <Helmet>
+                <title>Privacy Policy | PathMakers</title>
+                <meta name="description" content="PathMakers Privacy Policy: Learn how we collect, use, and protect your personal information. We prioritize data security and comply with privacy regulations." />
+                <meta name="keywords" content="Privacy Policy, PathMakers privacy, data protection, data security, GDPR compliance, user privacy" />
+                <link rel="canonical" href="https://path-makers.vercel.app/privacy" />
+                <meta name="robots" content="index, follow" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/privacy" />
+                <meta property="og:title" content="Privacy Policy - PathMakers" />
+                <meta property="og:description" content="Learn how we protect your data and maintain privacy compliance." />
+            </Helmet>
             <div className="container mx-auto max-w-4xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

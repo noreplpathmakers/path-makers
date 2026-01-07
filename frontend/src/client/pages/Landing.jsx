@@ -50,8 +50,23 @@ const Landing = () => {
             <Helmet>
                 <title>PathMakers - Premier Freelance Marketplace for Digital Services</title>
                 <meta name="description" content="Hire top-tier freelancers on PathMakers. The ultimate digital ecosystem for web development, graphic design, content writing, SEO, and more. Bring your vision to life today." />
-                <meta name="keywords" content="PathMakers, Freelancing, Hire Freelancers, Digital Services, Remote Work, Web Development, Graphic Design, SEO Services" />
+                <meta name="keywords" content="PathMakers, Freelancing, Hire Freelancers, Digital Services, Remote Work, Web Development, Graphic Design, SEO Services, Freelance Platform, Gig Economy" />
                 <link rel="canonical" href="https://path-makers.vercel.app/" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://path-makers.vercel.app/" />
+                <meta property="og:title" content="PathMakers - Premier Freelance Marketplace" />
+                <meta property="og:description" content="Hire top-tier freelancers for web development, design, SEO, and more. Transform your digital vision into reality." />
+                <meta property="og:image" content="https://path-makers.vercel.app/og-home.jpg" />
+                <meta property="og:site_name" content="PathMakers" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://path-makers.vercel.app/" />
+                <meta name="twitter:title" content="PathMakers - Premier Freelance Marketplace" />
+                <meta name="twitter:description" content="Hire top-tier freelancers for web development, design, SEO, and more." />
+                <meta name="twitter:image" content="https://path-makers.vercel.app/og-home.jpg" />
             </Helmet>
 
             {/* --- HERO SECTION: 3D REIMAGINED --- */}
