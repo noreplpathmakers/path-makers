@@ -12,7 +12,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!sitemap\\.xml|robots\\.txt|google.*\\.html|.*\\.(ico|png|jpg|jpeg|svg|gif|webp|css|js|woff|woff2|ttf|eot)).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
